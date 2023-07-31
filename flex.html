@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{background-color: aqua;
+            height: 344px;width: 100%;
+            border: 2px solid saddlebrown;
+        display: flex;
+        /* flex-direction: row-reverse; */
+        flex-direction: row;
+  /* flex-wrap: wrap; */
+  
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+    }
+     .item{ background-color: aquamarine;margin: 2px;
+    border: 2px solid darkblue;
+width:200px;height: 200px;
+fl
+}
+#item1 {
+    order: 3;
+    flex-grow: 2;
+}
+#item2{
+    flex-shrink: 4;flex-grow: 3;
+    flex-basis: 260px;
+}
+#item3{align-self: flex-end;}
+    </style>
+</head>
+<body>
+    <h3>flexbox</h3>
+    <div class="container">
+        <div class="item" id="item1">first box       </div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+    </div>
+</body>
+</html>

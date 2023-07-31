@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth pseudo</title>
+    <style>
+        .container {display:block;
+            width:233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]
+        { color: aqua;}
+    li:nth-child(2)
+    {
+        color: red;
+    }
+li:nth-child(2n+0)
+{color: brown;}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="" class="forms">
+        <input type="text" name="" id="" placeholder="Enter your name">
+        <input type="password" placeholder="enter password">
+    </form>
+    <ul>
+        <li class="items" id="items1">first</li>
+        <li class="items" id="items2">sec</li>
+        <li class="items" id="items3">third</li>
+        <li class="items" id="items4">fourth</li>
+    </ul>
+    </div>
+</body>
+</html>

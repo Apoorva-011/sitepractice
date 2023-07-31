@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multispanning</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(5,auto);
+            grid-template-rows: repeat(3,auto);
+            grid-gap: 2fr;
+            /* grid-column-gap: 7px; */
+        }
+        .box{
+            border: 2px solid red;
+            background-color: aqua;
+            padding: 23px;
+        }
+        .box:first-child
+       { /* grid-column-start: 1; */
+        /* grid-column-end: 3; */
+      /* grid-row-start: 1; */
+    /* grid-row-end: 3; */
+      grid-column: 3/span 3;}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">item number1</div>
+        <div class="box">item number2</div>
+        <div class="box">item number3</div>
+        <div class="box">item number4</div>
+        <div class="box">item number5</div>
+        <div class="box">item number6</div>
+        <div class="box">item number7</div>
+        <div class="box">item number8</div>
+        <div class="box">item number9</div>
+        <div class="box">item number7</div>
+        <div class="box">item number8</div>
+        <div class="box">item number9</div>
+    </div>
+</body>
+</html>

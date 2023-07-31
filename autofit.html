@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autofit</title>
+    <style>
+        .container
+        {display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+          'navbar navbar aside'
+          'section section aside'
+          }
+
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+/* justify-content: center; */
+/* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+
+        .box{
+            border: 2px solid saddlebrown;
+           background-color: aqua;     }
+        #section
+        { grid-area: section;}
+        #navbar{
+          grid-area: navbar;
+        }
+      #aside
+      {grid-area: aside;}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div id="navbar" class="box">Lorem, ipsum dolor.</div>
+    <div id="section"class="box" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum earum distinctio velit illo, soluta ipsum sint ut totam quia eius, omnis, facilis dolorem.</div>
+    <div id="aside" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rerum voluptates necessitatibus, accusantium debitis error, aspernatur libero perferendis, dolorem similique numquam veritatis!</div>
+    </div>  
+  </body>
+</html>

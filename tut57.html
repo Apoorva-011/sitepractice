@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        #btn
+        {padding: 34px;
+         color: black;
+         background-color: aqua;
+        border: red solid 2px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> heading</h1>
+        <p id="paa"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure beatae necessitatibus ipsum aut quos dicta eaque alias voluptas quia, dignissimos cumque provident harum!</p>
+    </div>
+    <button id="btn" onclick="togglehide()"> show/hide </button>
+<script>
+    let para=document.getElementById(`paa`);
+    para.addEventListener("mouseover",function run()
+     { alert("mouse over");})
+      
+    function togglehide()
+    { let b=document.getElementById("paa");
+     let btn=document.getElementById(`btn`);
+     if(b.style.display!=`none`)
+     b.style.display=`none`;
+    else
+    b.style.display=`block`;}
+</script>
+</body>
+</html>

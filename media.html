@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .class {
+            text-align: center;
+            font-size: 72px;
+            background-color: aqua;
+            color: red;
+            display: none;
+        }
+@media (max-width:300px)
+ {
+    #items1 {
+        display: block;
+        color: black;
+    }}
+ @media (min-width:300px) and (max-width :500px)
+ { #items2 {display :block;
+background-color: rgb(241, 241, 9);}} 
+
+@media (min-width:500px) and (max-width :1000px)
+ { #items3 {display :block;
+background-color:yellow;}}   
+    </style>
+</head>
+<body>
+    <div class="class" id="items1">i can do it</div>
+    <div class="class" id="items2">I will do it</div>
+    <div class="class" id="items3">I rock</div>
+    <div class="class" id="items4">shamilalalalalaa</div>
+</body>
+</html>

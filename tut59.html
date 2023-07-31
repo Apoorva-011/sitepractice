@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dates</title>
+</head>
+<body>
+    <div class="container">
+        time is <span id="time"> </span>
+    </div>
+    <script>
+        console.log("tutorial for date");
+        let now=new Date();
+        console.log(now);
+        let nw=new Date(1000);
+        console.log(nw);
+        let newdt=new Date("2029-09-30");
+        console.log(newdt);
+        let yr=newdt.getFullYear();
+        let mo=newdt.getMonth();
+        let dt=newdt.getDate();
+        console.log(dt);
+        newdt.setDate(8);
+        console.log(newdt);
+function updatetime() {
+let tm=new Date();
+console.log(tm);
+    document.getElementById(`time`).innerHTML=tm;
+
+    
+}
+    setInterval(updatetime,1000);
+    </script>
+</body>
+</html>

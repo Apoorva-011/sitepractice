@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setintsetout</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"> </span>
+    </div>
+  <script>
+    console.log("blaaa");
+  function greet(name)
+     {console.log("Hiii"+name);}
+// setTimeout(greet,5000,"Ha");
+// let a=setTimeout(greet,5000,"Ha");
+// console.log(a);
+// clearTimeout(a);
+// setInterval(greet,1000,"ha");
+// clearInterval
+function disptime()
+ {time=new Date();
+console.log(time);
+document.getElementById("time").innerHTML=time;}
+setInterval(disptime,1000);
+  </script>  
+</body>
+</html>

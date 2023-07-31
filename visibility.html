@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <style>
+        .box {width:10%;
+            color: aqua;}
+        #box1 {/*display: none*/;position: relative;top: 10px; 
+             background-color:  blueviolet;border: 3px solid red;
+            z-index: 36;}
+        #box2 {position: relative; top: 5px;px;
+            background-attachment: fixed;color: aquamarine;border: 3px solid red;
+        z-index: 32;}
+        #box3 {background-color: blue;border: 3px solid red;}
+        #box4 {background-color: beige;border: 3px solid red;}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">first</div>
+    <div class="box" id="box2">sec</div>
+    <div class="box" id="box3">third</div>
+    <div class="box" id="box4">fourth</div>
+    
+</body>
+</html>
